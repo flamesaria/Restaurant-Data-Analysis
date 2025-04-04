@@ -127,6 +127,7 @@ try:
     plt.title("Top-10 Restaurants by Rating")
     plt.xlabel("Rating")
     plt.ylabel("Restaurant")
+    plt.xlim(4.7, 5)
     plt.tight_layout()
     plt.savefig("plots/plot_top10_rating.png")
     plt.close()
@@ -136,10 +137,10 @@ except Exception as e:
 
 try:
     plt.figure(figsize=(8, 5))
-    sns.countplot(x="price_clean", data=df1, order=["Cheap", "Moderate", "Expensive", "Luxury"])
-    plt.title("Restaurants by Price Category")
+    sns.barplot(x="price_clean", y="COUNT (*)", data=df1, palette="viridis")
+    plt.title("Number of Restaurants by Price Category")
     plt.xlabel("Price Category")
-    plt.ylabel("Count")
+    plt.ylabel("Number of Restaurants")
     plt.tight_layout()
     plt.savefig("plots/plot_by_price.png")
     plt.close()
