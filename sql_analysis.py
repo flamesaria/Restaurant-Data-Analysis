@@ -46,12 +46,41 @@ print(df2.to_string(index=False))
 zip_to_district = {
     "00": "Śródmieście",
     "01": "Wola",
-    "02": "Mokotów",
+    "02": "Ochota",
     "03": "Praga-Północ",
     "04": "Praga-Południe",
-    "05": "Wawer/Ursynów",
+    "05": "Wawer",
     "06": "Targówek",
-    "07": "Bemowo"
+    "07": "Rembertów",
+    "08": "Wesoła",
+    "09": "Białołęka",
+    "10": "Bielany",
+    "11": "Żoliborz",
+    "12": "Mokotów",
+    "13": "Ursynów",
+    "14": "Wilanów",
+    "15": "Ursus",
+    "16": "Bemowo"
+}
+
+district_to_coords = {
+    "Śródmieście": (52.2297, 21.0122),
+    "Wola": (52.2356, 20.9784),
+    "Ochota": (52.2196, 20.9824),
+    "Praga-Północ": (52.2560, 21.0381),
+    "Praga-Południe": (52.2419, 21.0825),
+    "Wawer": (52.1950, 21.1856),
+    "Targówek": (52.2846, 21.0542),
+    "Rembertów": (52.2568, 21.1741),
+    "Wesoła": (52.2557, 21.2613),
+    "Białołęka": (52.3222, 21.0327),
+    "Bielany": (52.2912, 20.9356),
+    "Żoliborz": (52.2720, 20.9780),
+    "Mokotów": (52.2001, 21.0346),
+    "Ursynów": (52.1486, 21.0497),
+    "Wilanów": (52.1650, 21.0903),
+    "Ursus": (52.2000, 20.8655),
+    "Bemowo": (52.2519, 20.9083)
 }
 
 query3 = '''
@@ -68,6 +97,8 @@ conn.close()
 df3["district"] = df3["postal area"].map(zip_to_district)
 df3 = df3.dropna(subset=["district"])
 df3 = df3[["district", "restaurant count"]].sort_values(by="restaurant count", ascending=False)
+df3["latitude"] = df3["district"].map(lambda x: district_to_coords.get(x, (None, None))[0])
+df3["longitude"] = df3["district"].map(lambda x: district_to_coords.get(x, (None, None))[1])
 
 print("The number of restaurants in each area:")
 print(df3.to_string(index=False))

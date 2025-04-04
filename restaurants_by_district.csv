@@ -1,6 +1,7 @@
-district,restaurant count
-Śródmieście,35
-Praga-Północ,8
-Wola,2
-Mokotów,2
-Praga-Południe,2
+district,restaurant count,latitude,longitude
+Śródmieście,35,52.2297,21.0122
+Praga-Północ,8,52.256,21.0381
+Wola,2,52.2356,20.9784
+Ochota,2,52.2196,20.9824
+Praga-Południe,2,52.2419,21.0825
+Wilanów,1,52.165,21.0903
