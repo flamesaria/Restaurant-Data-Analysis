@@ -1,5 +1,5 @@
-price,COUNT (*)
-$,9
-$$,19
-$$$,5
-$$$$,6
+price,COUNT (*),price_clean
+$,9,Cheap
+$$,19,Moderate
+$$$,5,Expensive
+$$$$,6,Luxury

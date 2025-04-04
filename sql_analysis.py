@@ -1,5 +1,11 @@
 import sqlite3
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+os.makedirs("plots", exist_ok=True)
+
+sns.set(style="whitegrid")
 
 conn = sqlite3.connect("restaurants.db")
 
@@ -25,10 +31,20 @@ GROUP BY price
 ORDER BY price
 '''
 
+price_map = {
+    "$": "Cheap",
+    "$$": "Moderate",
+    "$$$": "Expensive",
+    "$$$$": "Luxury"
+}
+
 df1 = pd.read_sql_query(query1, conn)
+
+df1["price_clean"] = df1["price"].map(price_map)
 
 print("Number of restaurants by price category:")
 print(df1.to_string(index=False))
+
 
 # Average rating for each category
 query2 = '''
@@ -41,6 +57,7 @@ df2 = pd.read_sql_query(query2, conn)
 
 print("Average rating for each category:")
 print(df2.to_string(index=False))
+
 
 # Number of restaurants in each area
 zip_to_district = {
@@ -102,6 +119,60 @@ df3["longitude"] = df3["district"].map(lambda x: district_to_coords.get(x, (None
 
 print("The number of restaurants in each area:")
 print(df3.to_string(index=False))
+
+try:
+    plt.figure(figsize=(10, 6))
+    ratings = df.sort_values("rating", ascending=True)
+    plt.barh(ratings["name"], ratings["rating"], color="skyblue")
+    plt.title("Top-10 Restaurants by Rating")
+    plt.xlabel("Rating")
+    plt.ylabel("Restaurant")
+    plt.tight_layout()
+    plt.savefig("plots/plot_top10_rating.png")
+    plt.close()
+    print("✅ plot_top10_rating saved")
+except Exception as e:
+    print("❌ Error in plot_top10_rating:", e)
+
+try:
+    plt.figure(figsize=(8, 5))
+    sns.countplot(x="price_clean", data=df1, order=["Cheap", "Moderate", "Expensive", "Luxury"])
+    plt.title("Restaurants by Price Category")
+    plt.xlabel("Price Category")
+    plt.ylabel("Count")
+    plt.tight_layout()
+    plt.savefig("plots/plot_by_price.png")
+    plt.close()
+    print("✅ plot_by_price saved")
+except Exception as e:
+    print("❌ Error in plot_by_price:", e)
+
+try:
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x="average rating", y="category", data=df2.sort_values("average rating", ascending=False), palette="coolwarm")
+    plt.title("Average Rating by Category")
+    plt.xlabel("Average Rating")
+    plt.ylabel("Category")
+    plt.tight_layout()
+    plt.savefig("plots/plot_avg_rating_by_category.png")
+    plt.close()
+    print("✅ plot_avg_rating_by_category saved")
+except Exception as e:
+    print("❌ Error in plot_avg_rating_by_category:", e)
+
+try:
+    plt.figure(figsize=(10, 6))
+    districts = df3.sort_values("restaurant count", ascending=True)
+    plt.barh(districts["district"], districts["restaurant count"], color="salmon")
+    plt.title("Number of Restaurants by District")
+    plt.xlabel("Number of Restaurants")
+    plt.ylabel("District")
+    plt.tight_layout()
+    plt.savefig("plots/plot_restaurants_by_district.png")
+    plt.close()
+    print("✅ plot_restaurants_by_district saved")
+except Exception as e:
+    print("❌ Error in plot_restaurants_by_district:", e)
 
 df.to_csv("top_10_restaurants.csv", index=False)
 df1.to_csv("restaurants_by_price.csv", index=False)
