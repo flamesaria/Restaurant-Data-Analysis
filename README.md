@@ -67,18 +67,23 @@ You can find insights like:
    cd Restaurant-Data-Analysis
 
 2. Install required packages
+   ```bash
    pip install requests pandas python-dotenv
 
 3. Create a .env file and add your Yelp API key
+   ```bash
    YELP_API_KEY=your_api_key
 
 4. Run the scraper
+   ```bash
    python yelp_scraper.py
 
 5. Save to SQLite
+   ```bash
    python to_sqlite.py
 
 6. Run analysis and export CSVs for Tableau
+    ```bash
    python analysis_queries.py
 
 7. Visualize in Tableau
