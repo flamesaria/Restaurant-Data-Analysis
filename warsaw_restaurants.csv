@@ -1,0 +1,51 @@
+name,rating,review_count,price,category,address,city,zip_code,latitude,longitude
+Restauracja Szklarnia,4.5,10,$,Modern European,Soho Factory,Warsaw,03-808,52.2488622247825,21.0598707061382
+Sekret,4.5,2,$$,Polish,ul. Jezuicka 1/3,Warsaw,00-281,52.2492943,21.0133305
+Bułkę przez Bibułkę,4.4,97,$,Cafes,ul. Zgoda 3,Warsaw,00-012,52.2325853,21.0144973
+Soul Kitchen,4.7,49,$$,Polish,ul. Nowogrodzka 18A,Warsaw,00-511,52.2294617,21.0147591
+Butchery & Wine,4.7,83,$$$$,Steakhouses,ul. Żurawia 22,Warsaw,00-515,52.2285614,21.0155296
+Kraina Pierogów,4.8,12,$,Pierogis,al. Jana Pawła II 61 / 210,Warsaw,01-031,52.2478866577148,20.9878196716309
+Zapiecek,4.1,83,$$,Polish,Al. Jerozolimskie 28,Warsaw,00-985,52.2317144289146,21.0193267134919
+Rusiko,4.5,42,$$,Georgian,Al. Ujazdowskie 22,Warsaw,00-478,52.22673,21.02374
+Restauracja Sora,4.4,5,$$,Korean,ul. Wronia 45,Warsaw,00-870,52.2346014001857,20.9849669464256
+Barn Burger,4.2,93,$,Burgers,ul. Złota 9,Warsaw,00-032,52.2330306983402,21.0114101026763
+Restauracja Polska Różana,4.8,67,$$$,Polish,ul. Chocimska 7,Warsaw,00-791,52.20839,21.02347
+Stół,4.7,17,$,Breakfast & Brunch,ul. Nowolipki 17C,Warsaw,00-152,52.24479,20.99201
+Jinn & Joy,5.0,4,N/A,Bakeries,ul. Chmielna 1 / 3,Warsaw,00-021,52.23315,21.01903
+Knajpa Sami Swoi,4.6,5,$,Polish,ul.Grochowska 271,Warszawa,04-368,52.2457886,21.0719395
+Spacca Napoli,4.5,33,$$,Italian,ul. Świętokrzyska 30,Warsaw,00-116,52.2349153,21.0054584
+N31 Restaurant & Bar,4.5,6,N/A,Polish,ul. Nowogrodzka 31,Warsaw,00-511,52.22882,21.01333
+Steakownia,5.0,1,N/A,Steakhouses,ul. Krucza 23 / 31,Warsaw,14-100,52.227253,21.017598
+Warszawa Wschodnia,4.4,46,$$$,Modern European,ul. Mińska 25,Warszawa,03-808,52.249617,21.060556
+The Alchemist Gastropub,4.1,22,$$,Gastropubs,pl. Piłsudskiego 3,Warsaw,00-078,52.242835,21.011893
+Halka,4.9,9,$$,Polish,ul. Puławska 43,Warsaw,00-834,52.2067020323897,21.0234365612268
+Beirut,4.3,49,$,Middle Eastern,ul. Poznańska 12,Warszawa,00-454,52.2245241838685,21.0123351488276
+Radio Cafe,4.5,76,$$,Polish,ul. Nowogrodzka 56,Warsaw,00-695,52.2276658,21.0066719
+Polana Smaków,4.8,4,N/A,Modern European,ul. Emilii Plater 14,Warsaw,00-669,52.22433,21.0079
+Shipudei Berek,4.1,80,$$,Jewish,ul. Jasna 24,Warsaw,00-054,52.2364,21.01056
+Beef N' Pepper,4.2,15,$$$,Bars,ul. Nowogrodzka 47A,Warsaw,00-695,52.227607,21.008337
+Centrum Zarządzania Światem,4.7,14,$$,Pubs,ul. Stefana Okrzei 26,Warsaw,03-710,52.2510779,21.0353758883432
+Shoku,4.8,16,$$$,Japanese,ul. Karolkowa 30,Warsaw,01-207,52.2316268962773,20.9779903118024
+Steakhouse Evil,4.7,3,N/A,Steakhouses,ul. Świętokrzyska 3,Warsaw,00-360,52.23688,21.01854
+Pekin Ekspres,4.8,5,$$,Chinese,ul. Puławska 74 / 80,Warsaw,02-603,52.1993587204377,21.0233784491601
+Miąższ,4.3,3,N/A,Modern European,ul. Francuska 12A,Warsaw,03-906,52.232996,21.055233
+Pastelowa,5.0,1,N/A,Polish,ul. Meksykańska 3,Warsaw,03-948,52.2305388973402,21.057328954339
+Pod Gigantami,4.3,8,$$$$,Polish,al. Ujazdowskie 24,Warsaw,00-478,52.2269592,21.0237103
+Gościniec Polskie Pierogi,4.6,19,$$,Polish,ul. Podwale 19,Warsaw,00-252,52.249057,21.009282
+Gościniec Polskie Pierogi,4.4,20,$$,Polish,ul. Krakowskie Przedmieście 29,Warsaw,00-071,52.24398,21.01389
+Senses,4.6,9,$$$$,Modern European,ul. Bielańska 12,Warsaw,00-085,52.2445537,21.0060378
+Restauracja Stary Dom,4.5,57,$$$,Polish,ul. Puławska 104/106,Warsaw,02-620,52.19574,21.02382
+Restauracja Delicja Polska,4.3,12,$$$$,Polish,ul. Krakowskie Przedmieście 64,Warszawa,00-322,52.24548,21.01442
+Mazal Tov,5.0,1,N/A,Jewish,ul. Podwale 29,Warsaw,00-261,52.25046,21.00962
+Restauracja Pierwsza Liga,4.0,3,$,Sports Bars,Jagiellońska 26,Warsaw,03-719,52.2515907,21.0355206
+Himalaya Multi cuisine,5.0,1,N/A,Indian,ul. Stanisława Mikołajczyka 1A,Warsaw,03-984,52.229766,21.095358
+Saska Gęba,4.5,2,$$,Italian,ul. Saska 47/49,Warsaw,03-968,52.2273184,21.0637576
+Thai Me Up,4.6,16,$$$$,Thai,ul. Foksal 16,Warsaw,00-372,52.2338721,21.0206805134918
+Wilcza 50,4.6,21,$$$$,Mediterranean,ul. Wilcza 50 / 52,Warsaw,00-679,52.224379,21.011994
+Stolica,4.9,7,N/A,Polish,ul. Szeroki Dunaj 1 / 3,Warsaw,00-255,52.2494923155087,21.0104993920724
+Uki Uki,4.3,55,$$,Sushi Bars,ul. Krucza 23 / 31,Warsaw,00-525,52.227414,21.017567
+Wi-Taj,4.5,26,$$,Thai,pl. Konstytucji 4,Warsaw,00-552,52.221896,21.017741
+Pastrami Bistro,4.5,4,N/A,Pizza,ul. Solec 50,Warsaw,00-382,52.2366833464,21.0292770574
+Dos Tacos,3.8,37,$$,Mexican,ul. Jasna 22,Warsaw,00-054,52.2362099,21.0106907
+Pizzeria Rosso,5.0,4,$,Italian,ul. Poligonowa 1 / 4,Warszawa,04-051,52.232029,21.0823803
+Hops,4.8,4,$$,Modern European,ul. Chmielna 5,Warsaw,00-021,52.2331445705197,21.0183812230837
