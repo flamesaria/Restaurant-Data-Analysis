@@ -50,7 +50,6 @@ Restaurant-Data-Analysis/
 - Prepares CSV files for visualization in Tableau
 
 ---
----
 
 ## Visualizations (Python)
 
@@ -75,6 +74,9 @@ The following charts were generated using `Matplotlib` and `Seaborn` based on th
 ---
 
 ## Visualizations in Tableau
+
+View the full interactive dashboard on Tableau Public:  
+[[Warsaw Restaurant Analysis on Tableau Public]](https://public.tableau.com/views/RestaurantDataAnalysis_17437985621010/Sheet4?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 You can find insights like:
 
