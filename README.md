@@ -16,6 +16,11 @@ Restaurant-Data-Analysis/
 ├── restaurants_by_price.csv           # Distribution by price category (for Tableau)
 ├── average_rating_by_category.csv     # Average rating by cuisine (for Tableau)
 ├── restaurants_by_district.csv        # Number of restaurants per district (for Tableau)
+├── plots/
+│   ├── plot_top10_rating.png
+│   ├── plot_by_price.png
+│   ├── plot_avg_rating_by_category.png
+│   └── plot_restaurants_by_district.png
 ├── .env                               # API key (not included in the repo)
 ├── .gitignore                         # Ignores .env and .db files
 └── README.md                          # Project description
@@ -43,6 +48,29 @@ Restaurant-Data-Analysis/
   - Average rating by cuisine category
   - Distribution of restaurants across Warsaw districts
 - Prepares CSV files for visualization in Tableau
+
+---
+---
+
+## Visualizations (Python)
+
+The following charts were generated using `Matplotlib` and `Seaborn` based on the analyzed restaurant data.
+
+### Top-10 Restaurants by Rating
+
+![Top 10 Rating](plots/plot_top10_rating.png)
+
+### Number of Restaurants by Price Category
+
+![By Price](plots/plot_by_price.png)
+
+### Average Rating by Category
+
+![Average Rating](plots/plot_avg_rating_by_category.png)
+
+### Restaurants by District
+
+![By District](plots/plot_restaurants_by_district.png)
 
 ---
 
